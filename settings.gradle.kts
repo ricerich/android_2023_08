@@ -17,3 +17,4 @@ rootProject.name = "Test2"
 include(":app")
 include(":calc")
 include(":animal")
+include(":ch05_01")

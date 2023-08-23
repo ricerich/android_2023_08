@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_grid2)
         //onCreate()메소드의 지역변수 자리
 
         //1.kotlin 객체 만들기 +  2.xml객체를 가져와서, kotlin 객체에 연결(바인딩)

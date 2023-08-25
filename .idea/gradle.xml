@@ -17,6 +17,10 @@
             <option value="$PROJECT_DIR$/calc2_number_button" />
             <option value="$PROJECT_DIR$/ch05_01" />
             <option value="$PROJECT_DIR$/ch06_01_reservation" />
+            <option value="$PROJECT_DIR$/ch06_02_viewflipper" />
+            <option value="$PROJECT_DIR$/ch06_03_tabhost" />
+            <option value="$PROJECT_DIR$/ch06_04_actionbar_and_fragment" />
+            <option value="$PROJECT_DIR$/ch06_05_webview" />
           </set>
         </option>
       </GradleProjectSettings>

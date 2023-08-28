@@ -21,6 +21,9 @@
             <option value="$PROJECT_DIR$/ch06_03_tabhost" />
             <option value="$PROJECT_DIR$/ch06_04_actionbar_and_fragment" />
             <option value="$PROJECT_DIR$/ch06_05_webview" />
+            <option value="$PROJECT_DIR$/ch07_01_menu_01_options" />
+            <option value="$PROJECT_DIR$/ch07_02_menu_02_jeju" />
+            <option value="$PROJECT_DIR$/ch07_03_dialog_multi" />
           </set>
         </option>
       </GradleProjectSettings>

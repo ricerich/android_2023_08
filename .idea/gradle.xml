@@ -24,6 +24,7 @@
             <option value="$PROJECT_DIR$/ch07_01_menu_01_options" />
             <option value="$PROJECT_DIR$/ch07_02_menu_02_jeju" />
             <option value="$PROJECT_DIR$/ch07_03_dialog_multi" />
+            <option value="$PROJECT_DIR$/ch07_04_dialog_login" />
           </set>
         </option>
       </GradleProjectSettings>

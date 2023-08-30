@@ -13,7 +13,6 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    var btnPhoto : Button? = null;
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         var btnGoogle = findViewById<Button>(R.id.btnGoogle)
         var btnSearch = findViewById<Button>(R.id.btnSearch)
         var btnSms = findViewById<Button>(R.id.btnSms)
+        var btnPhoto = findViewById<Button>(R.id.btnPhoto)
 
 
         btnDial.setOnClickListener {

@@ -3,8 +3,10 @@ package com.example.ch10_activity_02_movie
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import kotlin.math.max
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +28,36 @@ class ResultActivity : AppCompatActivity() {
         var rbId_Arr = arrayOf(R.id.rbar1, R.id.rbar2, R.id.rbar3,
                                R.id.rbar4, R.id.rbar5, R.id.rbar6,
                                R.id.rbar7, R.id.rbar8, R.id.rbar9)
+        val imageFileId = arrayOf(R.drawable.pic1, R.drawable.pic2, R.drawable.pic3,
+                                  R.drawable.pic4, R.drawable.pic5, R.drawable.pic6,
+                                  R.drawable.pic7, R.drawable.pic8, R.drawable.pic9)
+
+        var tvTop = findViewById<TextView>(R.id.tvTop)
+        var ivTop = findViewById<ImageView>(R.id.ivTop)
+
+//        var max = 0;
+//        var max_index = 0;
+//
+//        for(i in 0 until voteCountArray!!.size)
+//        {
+//            if(voteCountArray[i]>max)
+//            {
+//                max = voteCountArray[i]
+//                max_index = i
+//            }
+//        }
+
+        var max_index = 0;
+        for(i in 0 until voteCountArray!!.size)
+        {
+            if(voteCountArray[i]>voteCountArray[max_index])
+                max_index = i
+        }
+
+        tvTop.text = imageNameArray!![max_index]
+        ivTop.setImageResource(imageFileId[max_index])
+
+
 
         //바인딩
         for(i in tvArr!!.indices)

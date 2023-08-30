@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RadioGroup
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -16,12 +17,29 @@ class MainActivity : AppCompatActivity() {
         var edt1 = findViewById<EditText>(R.id.edtNum1)
         var edt2 = findViewById<EditText>(R.id.edtNum2)
 
+        var rg1 = findViewById<RadioGroup>(R.id.rg1)
+
         var btn1 = findViewById<Button>(R.id.btnNewActivity)
         btn1.setOnClickListener {
             var intent1 = Intent(this, SecondActivity::class.java)
 
             intent1.putExtra("Num1", edt1.text.toString().toInt())
             intent1.putExtra("Num2", edt2.text.toString().toInt())
+
+            var op = ""
+            when(rg1.checkedRadioButtonId)
+            {
+                R.id.rdo1 -> op = "+"
+                R.id.rdo2 -> op = "-"
+                R.id.rdo3 -> op = "*"
+                R.id.rdo4 -> op = "/"
+                else -> {
+                    Toast.makeText(this, "부호를 선택해주세요", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
+            }
+
+            intent1.putExtra("Operator", op)
 
             startActivityForResult(intent1, 0)
         }

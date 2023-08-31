@@ -29,6 +29,10 @@
             <option value="$PROJECT_DIR$/ch10_activity_02_movie" />
             <option value="$PROJECT_DIR$/ch10_activity_03_both" />
             <option value="$PROJECT_DIR$/ch10_activity_04_implicit" />
+            <option value="$PROJECT_DIR$/ch11_01_listview" />
+            <option value="$PROJECT_DIR$/ch11_02_grid_view" />
+            <option value="$PROJECT_DIR$/ch11_03_gallery" />
+            <option value="$PROJECT_DIR$/ch11_04_spinner" />
           </set>
         </option>
       </GradleProjectSettings>

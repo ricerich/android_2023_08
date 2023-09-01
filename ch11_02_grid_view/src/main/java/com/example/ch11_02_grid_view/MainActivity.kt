@@ -60,14 +60,23 @@ class MainActivity : AppCompatActivity() {
 
             iv1.setOnClickListener {
 
+                var posterTitle = arrayOf("써니", "완득이", "괴물", "라디오스타", "비열한거리",
+                                          "왕의남자", "아일랜드", "웰컴투동막골", "헬보이", "빽투더퓨처",
+                                          "써니", "완득이", "괴물", "라디오스타", "비열한거리",
+                                          "왕의남자", "아일랜드", "웰컴투동막골", "헬보이", "빽투더퓨처",
+                                          "써니", "완득이", "괴물", "라디오스타", "비열한거리",
+                                          "왕의남자", "아일랜드", "웰컴투동막골", "헬보이", "빽투더퓨처",
+                                          "써니", "완득이", "괴물", "라디오스타", "비열한거리",
+                                          "왕의남자", "아일랜드", "웰컴투동막골", "헬보이", "빽투더퓨처")
+
                 var dialog_view = View.inflate(this@MainActivity, R.layout.dialog1, null)
 
                 var ivPoster = dialog_view.findViewById<ImageView>(R.id.ivPoster)
                 ivPoster.setImageResource(posterID[position])
 
                 var dlg = AlertDialog.Builder(this@MainActivity)
-                dlg.setTitle("큰 포스터")
-                dlg.setIcon(R.mipmap.ic_launcher)
+                dlg.setTitle(posterTitle[position])
+                dlg.setIcon(R.drawable.movie_icon)
                 dlg.setView(dialog_view)
                 dlg.setNegativeButton("닫기", null)
                 dlg.show()

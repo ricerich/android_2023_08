@@ -34,6 +34,7 @@
             <option value="$PROJECT_DIR$/ch11_03_gallery" />
             <option value="$PROJECT_DIR$/ch11_04_spinner" />
             <option value="$PROJECT_DIR$/ch12_sqlite" />
+            <option value="$PROJECT_DIR$/ch13_101_googlemap" />
           </set>
         </option>
       </GradleProjectSettings>

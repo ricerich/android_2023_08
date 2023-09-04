@@ -58,7 +58,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.setOnMapClickListener { point ->
             videoMark = GroundOverlayOptions().image(
                 BitmapDescriptorFactory.fromResource(R.drawable.presence_video_busy))
-                .position(point, 100f, 100f)
+                                       .position(point, 100f, 100f)
             mMap.addGroundOverlay(videoMark)
         }
     }

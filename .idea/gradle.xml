@@ -37,8 +37,12 @@
             <option value="$PROJECT_DIR$/ch11_03_gallery" />
             <option value="$PROJECT_DIR$/ch11_04_spinner" />
             <option value="$PROJECT_DIR$/ch12_sqlite" />
+            <option value="$PROJECT_DIR$/ch13_01_media_player" />
             <option value="$PROJECT_DIR$/ch13_101_googlemap" />
             <option value="$PROJECT_DIR$/ch13_102_ui_thread" />
+            <option value="$PROJECT_DIR$/ch14_01_service" />
+            <option value="$PROJECT_DIR$/ch14_02_broadcast_receive" />
+            <option value="$PROJECT_DIR$/ch14_03_content_provider" />
           </set>
         </option>
       </GradleProjectSettings>
